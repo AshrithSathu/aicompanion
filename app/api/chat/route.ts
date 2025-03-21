@@ -41,6 +41,7 @@ export async function POST(request: Request) {
       model: "llama-3.3-70b-versatile",
       temperature: 0.7,
       top_p: 0.9,
+      max_tokens: 500,
     });
 
     return NextResponse.json({
