@@ -27,13 +27,16 @@ export async function POST(request: Request) {
   try {
     const { messages } = await request.json();
 
+    // Keep only the last 10 messages for context
+    const recentMessages = messages.slice(-10);
+
     // Add system message at the beginning
     const allMessages = [
       {
         role: "system",
         content: SYSTEM_PROMPT,
       },
-      ...messages,
+      ...recentMessages,
     ];
 
     const completion = await groq.chat.completions.create({

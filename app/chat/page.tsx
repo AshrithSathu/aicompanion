@@ -51,7 +51,9 @@ export default function ChatPage() {
   // Save messages to localStorage whenever messages change
   useEffect(() => {
     if (messages.length > 0) {
-      localStorage.setItem("chatMessages", JSON.stringify(messages));
+      // Keep only the last 10 messages in localStorage
+      const recentMessages = messages.slice(-10);
+      localStorage.setItem("chatMessages", JSON.stringify(recentMessages));
     }
   }, [messages]);
 
