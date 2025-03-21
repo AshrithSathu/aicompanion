@@ -1,0 +1,6 @@
+always use shadcn components only when every needed
+use pnpm as package manager 
+any styling is done always refer to whole website design principle and then only implement the design similar to the whole website
+use tailwind v4 
+always use images from unsplash there url dont download any image to offline
+use framer motion for animations
