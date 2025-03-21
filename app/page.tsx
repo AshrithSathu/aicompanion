@@ -675,7 +675,7 @@ export default function Home() {
           </div>
           <div className="mt-8 border-t border-gray-300 pt-6 flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-700">
-              © 2023 AI Companion. All rights reserved.
+              © 2025 AI Companion. All rights reserved.
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <Link
