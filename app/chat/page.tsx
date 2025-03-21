@@ -263,7 +263,7 @@ export default function ChatPage() {
                 <div
                   className={`max-w-[80%] ${
                     message.role === "user" ? "bg-black text-white" : "bg-white"
-                  } rounded-lg p-3 shadow-sm`}
+                  } rounded-lg p-3 shadow-sm break-words overflow-wrap-anywhere whitespace-normal overflow-hidden`}
                 >
                   <p>{message.content}</p>
                   <p
